@@ -19,7 +19,7 @@ export const requestLogger = morgan((tokens, req, res) => {
     timestamp: new Date().toISOString(),
   };
 
-  if (parseInt(status) >= 400) {
+  if (parseInt(status || "0", 10) >= 400) {
     logger.warn(`HTTP ${status}`, logData);
   } else {
     logger.info(`HTTP ${status}`, logData);
