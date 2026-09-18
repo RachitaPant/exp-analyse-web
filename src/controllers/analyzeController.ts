@@ -1,8 +1,8 @@
 import { Request, Response } from "express";
-import { validateAnalyzeRequest } from "@/utils/validation";
-import { AppError } from "@/middleware";
-import { analyzeService } from "@/services/analyzeService";
-import { logger } from "@/utils/logger";
+import { validateAnalyzeRequest } from "../utils/validation";
+import { AppError } from "../middleware";
+import { analyzeService } from "../services/analyzeService";
+import { logger } from "../utils/logger";
 
 export const analyzeController = {
   analyze: async (req: Request, res: Response) => {

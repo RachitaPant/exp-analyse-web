@@ -1,6 +1,6 @@
 import { Express, Request, Response, NextFunction } from "express";
-import { logger } from "@/utils/logger";
-import { ErrorResponse } from "@/types";
+import { logger } from "../utils/logger";
+import { ErrorResponse } from "../types";
 
 export class AppError extends Error {
   constructor(

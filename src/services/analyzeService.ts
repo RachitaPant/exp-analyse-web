@@ -1,7 +1,7 @@
 import { pageSpeedService } from "./pageSpeedService";
 import { transformPageSpeedData } from "./transformPageSpeedData";
-import { AnalysisData } from "@/types";
-import { logger } from "@/utils/logger";
+import { AnalysisData } from "../types";
+import { logger } from "../utils/logger";
 
 export const analyzeService = {
   analyzeUrl: async (url: string): Promise<AnalysisData> => {

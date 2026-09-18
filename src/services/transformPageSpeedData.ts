@@ -4,7 +4,7 @@ import {
   LighthouseAudits,
   LighthouseCategories,
   PuppeteerData,
-} from "@/types";
+} from "../types";
 
 const REQUIRED_AUDITS = [
   "is-on-https",

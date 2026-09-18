@@ -1,8 +1,8 @@
 import express, { Express, Request, Response } from "express";
-import { config } from "@/config";
-import { corsMiddleware, requestLogger, errorHandler } from "@/middleware";
-import routes from "@/routes";
-import { logger } from "@/utils/logger";
+import { config } from "./config";
+import { corsMiddleware, requestLogger, errorHandler } from "./middleware";
+import routes from "./routes";
+import { logger } from "./utils/logger";
 
 const app: Express = express();
 

@@ -1,7 +1,7 @@
 import axios from "axios";
-import { config } from "@/config";
-import { AppError } from "@/middleware";
-import { logger } from "@/utils/logger";
+import { config } from "../config";
+import { AppError } from "../middleware";
+import { logger } from "../utils/logger";
 
 const PAGESPEED_API_URL =
   "https://www.googleapis.com/pagespeedonline/v5/runPagespeed";

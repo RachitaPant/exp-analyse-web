@@ -1,5 +1,5 @@
 import morgan from "morgan";
-import { logger } from "@/utils/logger";
+import { logger } from "../utils/logger";
 
 morgan.token("body", (req: any) => {
   return JSON.stringify(req.body);
