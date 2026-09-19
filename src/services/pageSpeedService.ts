@@ -29,7 +29,7 @@ const fetchPageSpeedData = async (
         url,
         key: config.googlePageSpeedApiKey,
         category: ["performance", "accessibility", "best-practices", "seo"],
-        strategy: "mobile",
+        strategy: "desktop",
       },
       paramsSerializer: (params) =>
         qs.stringify(params, undefined, undefined, {
