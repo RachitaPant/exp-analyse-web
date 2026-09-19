@@ -1,4 +1,5 @@
 import axios from "axios";
+import qs from "querystring";
 import { config } from "../config";
 import { AppError } from "../middleware";
 import { logger } from "../utils/logger";
@@ -30,6 +31,10 @@ export const pageSpeedService = {
           category: ["performance", "accessibility", "best-practices", "seo"],
           strategy: "mobile",
         },
+        paramsSerializer: (params) =>
+          qs.stringify(params, undefined, undefined, {
+            encodeURIComponent: encodeURIComponent,
+          }),
         timeout: 60000,
       });
 
